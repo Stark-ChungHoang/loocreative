@@ -36,7 +36,7 @@ export const ItemsLeft = styled.div`
     }
     @media screen and (${Variable.tablet}) {
                 margin-top: 30px;
-                padding:0 40px;
+                padding:0 20px;
                 
     }
 `

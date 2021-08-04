@@ -4,8 +4,8 @@ import {Link as LinkR} from "react-router-dom"
 import {Link as LinkS} from "react-scroll"
 import * as Variable from "../../Variables"
 export const SidebarContainer = styled.div`
-         background: ${Variable.BgGray};
-        width: 80%;
+        background: ${Variable.BgGray};
+        width: 100%;
         height: 100vh;
         padding-top: 25px;
         position: fixed;

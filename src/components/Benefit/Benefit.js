@@ -28,20 +28,20 @@ export const Title = styled.div`
    @media screen and (${Variable.laptop}) {
       margin-right:0 ;
       width: 320px;
-      padding:15px;
+      padding:20px;
    }
    @media screen and (max-width:768px) {
+      width: 100%;
    text-align: center;
    font-size: 38px;
    }
    @media screen and (max-width:380px) {
       width: 100%;
-   font-size: 28px;
+   font-size: 20px;
    }
    overflow-x: visible !important;
 `
 export  const Detail = styled.div`
-
    font-family: ${Variable.FontNoto};
    padding-left: 60px;
    margin-top: 30px;
@@ -54,6 +54,13 @@ export  const Detail = styled.div`
    @media screen and (max-width:768px) {
       width: 100%;
       padding:0 30px;
+      margin-bottom: 30px;
+   }
+   @media screen and (${Variable.mobile}) {
+      font-size: 13px;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 200px;
    }
    overflow-x: visible !important;
 `

@@ -15,3 +15,4 @@ export const mobile = "max-width:640px";
 export const tablet = "max-width:768px";
 export const laptop = "max-width:1024px";
 export const destop = "max-width:1280px";
+export const bigDestop = "max-width:1450px";

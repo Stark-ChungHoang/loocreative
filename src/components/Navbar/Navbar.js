@@ -7,15 +7,25 @@ background-color: ${Variable.BgDefault};
 color: ${Variable.TextDefault};
 height: 108px;
 display: flex;
-justify-content: center;
-align-items: center;
+padding:0 335px;
 position: fixed;
 font-family: ${Variable.FontNoto};
 top:0;
 left:0;
 z-index: 100;
 width: 100vw;
+ @media screen and (${Variable.bigDestop}) {
+     padding:0 100px;
  
+ }
+ @media screen and (${Variable.laptop}) {
+     padding:0 50px;
+ 
+ }
+ @media screen and (${Variable.tablet}) {
+     padding:0 30px;
+ 
+ }
 `
 export const NavbarContainer = styled.div`
 display:flex;
@@ -23,14 +33,14 @@ justify-content: space-between;
 height: 108px;
 z-index: 1;
 width: 100%;
-max-width: 1100px;
 
 `
 export const NavLogo = styled(LinkR)`
 display: flex;
 align-items: center;
+
 @media screen and (${Variable.destop}) {
-    padding: 0 35px;
+    padding: 0 ;
 }
 `
 
@@ -84,7 +94,7 @@ cursor: pointer;
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
-
+   justify-content: space-around;
   @media screen and (${Variable.laptop}) {
       display: none;
   }
@@ -93,7 +103,7 @@ export const NavBtnLink = styled(LinkR)`
  color:${Variable.TextDefault};
  cursor: pointer;
  text-decoration: none;
-padding:0 7px;
+padding:0 20px;
 font-size: 14px;
 line-height: 30px;
  `

@@ -21,16 +21,29 @@ export const ImgHero = styled.div`
 export const Content = styled.div`
   position: absolute;
   z-index: 1;
-  top: 30%;
-  left: 12%;
+  top: 17%;
+  padding:0 335px;
+ @media screen and (${Variable.bigDestop}) {
+   padding:0 100px;
+    top: 25%;
+   
+  }
   @media screen and (${Variable.laptop}) {
     left: 50%;
     top: 13%;
+    transform: translateX(-50%);
+    padding:0;
+  }
+  @media screen and (${Variable.tablet}) {
+    padding:0;
+    left: 50%;
+    top: 15%;
     transform: translateX(-50%);
   }
   @media screen and (${Variable.mobile}) {
     left: 50%;
     top: 20%;
+    padding:0;
     transform: translateX(-50%);
   }
   overflow-x: visible !important;

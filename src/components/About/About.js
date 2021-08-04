@@ -6,35 +6,48 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+       padding:0 335px;
         font-family: ${Variable.FontNoto};
-        @media screen and (max-width:768px) {
+        @media screen and (${Variable.bigDestop}) {
+            padding:0 100px;
+        }
+        @media screen and (${Variable.mobile}) {
                 height:100%;
-                
+                padding:0 25px;  
+   }
+        @media screen and (${Variable.tablet}) {
+                height:100%;
+                padding:0 40px;  
    }
 `
 export const TopTitle = styled.div`
-    margin-top: 20px;
-    padding:0 25px;
+    margin-top: 120px;
+    text-align: center;
+    @media screen and (${Variable.tablet}) {
+                margin-top: 60px;
+   }
+    @media screen and (${Variable.mobile}) {
+        margin-top: 60px;
+    }
 `
 export const Title = styled.div`
     font-size: 40px;
     line-height: 55px;
-    @media screen and (max-width:768px) {
+    @media screen and (${Variable.mobile}) {
    font-size: 30px;
    text-align: center;
-   padding:0 10px;
+   padding:0 25px;
    }
 `
 export const DetailTitle = styled.div`
     margin-top: 40px;
-    margin-left: 70px;
     text-align: center;
     font-size: 18px;
     line-height: 28px;
     font-weight: 300;
-    width: 378px;
-    @media screen and (max-width:768px) {
+    width: 348px;
+    height: 45px;
+    @media screen and (${Variable.mobile}) {
         padding:0 20px;
         margin-left: 0px;
         margin-top: 20px;
@@ -45,61 +58,91 @@ export const DetailTitle = styled.div`
 
 export const Img = styled.div`
     display: none;
-    @media screen and (max-width:768px) {
+    
+    @media screen and (${Variable.mobile}) {
         display: block;
+        margin-top: 70px;
         padding:10px 25px;
+      
+        .hidden {
+            display: none;
+        }
       img {
+        overflow: hidden;
         width: 100%;
+      height: 100%;
         object-fit: contain;
-        height: 100%;
       }
         }
 `
 export const Main = styled.div`
 
         margin-top: 80px;
-    padding:0 180px;
         display: grid;
         grid-template-columns: 23% 54% 23%;
-        color: ${Variable.ClAbout};
-    @media screen and (max-width:768px) {
+       
+       
+    @media screen and (${Variable.mobile}) {
         display: flex;
         flex-direction: column;
         padding:0 40px;
         align-items: center;
         justify-content: center;
-    margin-top: 20px;
+        margin-top: 50px;
    }
+
 `
 export const Left = styled.div`
-@media screen and (max-width:768px) {
+@media screen and (${Variable.mobile}) {
 }
 `
 export const Center = styled.div`
-    padding: 0 60px;
+    padding: 0 70px;
     cursor: pointer;
     height: 527px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   .hidden {
+          img {
+            display: none;
+          }
+      }
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
                 cursor: pointer;
+              
 
             }
-        @media screen and (max-width:768px) {
+        @media screen and (${Variable.mobile}) {
         display: none;
         }
         overflow-x: visible !important;
 `
 export const Items = styled.div`
+     color: ${Variable.ClAbout};
       padding-top: 29px;
-
+      
+      &.active {
+          color:${Variable.TextDefault};
+          img {
+              opacity: 1;
+          }
+      }
+   
+        img {
+            cursor: pointer;
+            opacity: 0.6;
+        }
 `
 export const TitleItems = styled.div`
         font-size: 23.5px;
         line-height: 30.5px;
         overflow-x: visible !important;
- 
+        cursor: pointer;
+      
 `
 
 export const DetailItems = styled.div`
@@ -112,14 +155,14 @@ export const DetailItems = styled.div`
 
 export const Right = styled.div`
     text-align: right;
-    @media screen and (max-width:768px) {
+    @media screen and (${Variable.mobile}) {
         text-align:left;
 
 }
 `
 export const Button = styled.div`
     margin-top: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: ${Variable.BgDefault};
     display: flex;
     align-items: center;
