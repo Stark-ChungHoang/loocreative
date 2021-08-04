@@ -62,5 +62,10 @@ export  const Detail = styled.div`
       margin-top: 10px;
       margin-bottom: 200px;
    }
+   @media screen and (max-width:320px) {
+      
+
+      margin-bottom: 300px;
+   }
    overflow-x: visible !important;
 `

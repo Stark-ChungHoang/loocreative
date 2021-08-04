@@ -4,6 +4,7 @@ export const Container = styled.div`
   height: 657px;
   font-family: ${Variable.FontNoto};
   width: 100%;
+  
 `;
 
 export const ImgHero = styled.div`
@@ -42,7 +43,13 @@ export const Content = styled.div`
   }
   @media screen and (${Variable.mobile}) {
     left: 50%;
-    top: 20%;
+    top: 25%;
+    padding:0;
+    transform: translateX(-50%);
+  }
+  @media screen and (max-width:320px) {
+    left: 50%;
+    top: 35%;
     padding:0;
     transform: translateX(-50%);
   }
@@ -58,6 +65,10 @@ export const Title = styled.div`
     @media screen and (${Variable.mobile}) {
       font-size: 28px;
       line-height: 45px;
+    }
+    @media screen and (max-width:320px) {
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 `;
