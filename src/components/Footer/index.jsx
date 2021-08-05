@@ -16,9 +16,9 @@ function Footer() {
                         </Content>
                 </Title>
                 <Detail>
-                <p>(주) 가드시그니처 ｜ 대표자 : 홍길동 ｜ 사업자 등록번호 : 356-00-00000
-                    이메일 : test0101@guardsignature.co.kr｜ FAX : 070-0000-0000
-                    서울특별시 강남구 도산대로 8길 17 3층 </p>
+                <p>(주) 가드시그니처 ｜ 대표자 : 홍길동 ｜ 사업자 등록번호 : 356-00-00000  <br />
+             이메일 : test0101@guardsignature.co.kr｜ FAX : 070-0000-0000 <br />
+                  서울특별시 강남구 도산대로 8길 17 3층 </p> 
                   
                 
                     <p style={{marginTop:"20px"}}>Copyright© GUARDSIGNATURE All rights reserved.</p>

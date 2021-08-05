@@ -56,20 +56,26 @@ export const Content = styled.div`
 export const Detail = styled.div`
   font-size: 14px;
   line-height: 24px;
-  width: 419px;
-  height: 112px;
+  /* width: 419px;
+  height: 112px; */
   margin-top: 25px;
   font-weight: 300;
   display: flex;
   flex-direction: column;
-
   color: ${Variable.GrayCl};
+
+  @media screen and (max-width:768px) {
+
+ display: block;
+width: 100%;
+height: 100%;
+  }
   @media screen and (${Variable.mobile}) {
     width: 100%;
     height: 100%;
-    padding: 0 25px;
-    text-align: center;
+    padding: 0 15px;
     font-size: 13px;
+    text-align: center;
   }
   overflow-x: visible !important;
 `;
