@@ -4,9 +4,11 @@ function Sidebar({isOpen,toggle}) {
     return (
         
             <SidebarContainer isOpen = {isOpen} onClick = {toggle}>
+                {/* {ICON}  */}
                         <Icon onClick = {toggle}>
                             <CloseIcon />
                         </Icon>
+                   {/* MENU       */}
                         <SidebarWrapper>
                             <SidebarMenu>
                                 <SidebarLink onClick = {toggle} to="">서비스 소개</SidebarLink>

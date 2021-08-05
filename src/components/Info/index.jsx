@@ -8,19 +8,21 @@ function Info() {
             {DataInfoSection.map(({number,title,detail,widthTitle,widthDetail,bg,image,id,imgStart},index)=> {
                     return (
                         <Container key={index} imgStart={imgStart} bg={bg}>
-                            {/* Left  */}
-                                <ImgInfo>
-                                    <img src={image} alt={number} />
-                                </ImgInfo>
+                                {/* Left  section*/}
+                                    <ImgInfo>
+                                        <img src={image} alt={number} />
+                                    </ImgInfo>
+                                {/* END LEFT SECTION  */}
 
-                            {/* Right  */}
-                            <DetailInfo bg={bg}>
-                                <Number> {number}</Number>
-                                <TitleInfo bg={bg}>
-                                <Title widthTitle={widthTitle}>{title}</Title>
-                                </TitleInfo>
-                                <Detail widthDetail={widthDetail}>{detail}</Detail>
-                            </DetailInfo>
+                                {/* Right section */}
+                                <DetailInfo bg={bg}>
+                                    <Number> {number}</Number>
+                                    <TitleInfo bg={bg}>
+                                    <Title widthTitle={widthTitle}>{title}</Title>
+                                    </TitleInfo>
+                                    <Detail widthDetail={widthDetail}>{detail}</Detail>
+                                </DetailInfo>
+                            {/* END RIGHT SECTION  */}
                         </Container>
                     )
             })}

@@ -6,13 +6,15 @@ function Navbar({toggle}) {
     return (
         <Nav id="nav">
                    <NavbarContainer>
+                       {/* LOGO  */}
                        <NavLogo  to = "/">
-                           <img src="../../../logo-icon-1.svg" alt="" />
-                          
+                           <img src="../../../logo-icon-1.svg" alt="" />                 
                        </NavLogo>
+                       {/* LOGO MOBILE  */}
                        <MobileIcon onClick = {toggle}>
                            <FaBars />
                        </MobileIcon>
+                       {/* {MENU}  */}
                        <NavMenu>
                            <NavItem>
                                <NavLinks    smooth={true} duration={500} spy={true} exact="true" offset={-80} to="nav">서비스 소개</NavLinks>
@@ -32,7 +34,7 @@ function Navbar({toggle}) {
                            <NavItem>
                                <NavLinks  to="">고객센터</NavLinks>
                            </NavItem>
-                         
+                         {/* {SIGN IN SECTION } */}
                        </NavMenu>
                        <NavBtn>
                        <NavBtnLink  to="/signup">고객센터</NavBtnLink>

@@ -12,8 +12,9 @@ function Contact() {
                 <p>상대방은 회원가입 없이 이메일, 카카오톡 링크를 통해 서명할 수 있습니다.</p>
                 <p>언제 어디서든 5분만에 계약을 체결해 보세요.</p>
             </Detail>
+         {/* LIST ITEMS START  */}
             <ListItems />
-           
+         {/* LIST ITEMS END     */}
         </Container>
     )
 }

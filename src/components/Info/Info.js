@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  padding:0 335px;
+  padding: 0 335px;
   flex-direction: ${({ imgStart }) => (imgStart ? "row" : "row-reverse")};
   font-family: ${Variable.FontNoto};
   background-color: ${({ bg }) => (bg ? "#f4f5f8" : "#ffffff")};
@@ -11,7 +11,7 @@ export const Container = styled.div`
   width: 100%;
   color: ${Variable.TextDefault};
   @media screen and (${Variable.bigDestop}) {
-    padding:0 100px;
+    padding: 0 100px;
     justify-content: space-between;
   }
   @media screen and (${Variable.laptop}) {
@@ -22,18 +22,17 @@ export const Container = styled.div`
     height: 650px;
     justify-content: flex-start;
     overflow-x: visible;
-   
   }
   @media screen and (${Variable.mobile}) {
     padding: 0 25px;
   }
   @media screen and (max-width: 320px) {
-   height: 100%;
-   margin-bottom: 30px;
+    height: 100%;
+    margin-bottom: 30px;
   }
 `;
 export const ImgInfo = styled.div`
-  padding-top:  30px;
+  padding-top: 30px;
   width: 610px;
   height: 400px;
   object-fit: contain;
@@ -51,7 +50,6 @@ export const ImgInfo = styled.div`
   }
   @media screen and (max-width: 320px) {
     height: 200px;
-  
   }
 `;
 
@@ -68,16 +66,13 @@ export const DetailInfo = styled.div`
     margin-top: 20px;
   }
   @media screen and (max-width: 640px) {
-  padding:0 25px;
-   
-   
+    padding: 0 25px;
   }
   @media screen and (max-width: 280px) {
     padding: 0 16px;
     max-width: 280px;
     margin-top: 0;
   }
-  
 
   overflow-x: visible;
 `;
@@ -92,7 +87,6 @@ export const TitleInfo = styled.div`
   display: flex;
   justify-content: ${({ bg }) => (bg ? "flex-end" : "flex-start")};
   overflow-x: visible !important;
-  
 `;
 export const Title = styled.div`
   margin-top: 29px;
@@ -112,7 +106,7 @@ export const Title = styled.div`
     text-align: center;
     margin-top: 10px;
   }
-  @media screen and (max-width:320px) {
+  @media screen and (max-width: 320px) {
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -137,6 +131,6 @@ export const Detail = styled.div`
     font-size: 11px;
     font-size: 13px;
     line-height: 20px;
-  height: 100%;
+    height: 100%;
   }
 `;
