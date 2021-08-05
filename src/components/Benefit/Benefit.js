@@ -54,7 +54,7 @@ export  const Detail = styled.div`
    @media screen and (max-width:768px) {
       width: 100%;
       padding:0 30px;
-      margin-bottom: 30px;
+      margin-bottom: 80px;
    }
    @media screen and (${Variable.mobile}) {
       font-size: 13px;

@@ -4,7 +4,6 @@ export const Container = styled.div`
   height: 657px;
   font-family: ${Variable.FontNoto};
   width: 100%;
-  
 `;
 
 export const ImgHero = styled.div`
